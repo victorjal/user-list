@@ -12,4 +12,6 @@ let userList = document.getElementById('postList');
 fetch('https://jsonplaceholder.typicode.com/posts?userId='+ userId +'')
     .catch(error => console.error(error))
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => {
+        console.log(json)
+    });
